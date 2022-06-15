@@ -2,7 +2,7 @@
   <main class="main">
     <div class="container">
       <div class="main__container">
-        <p>MAIN</p>
+        <slot></slot>
       </div>
     </div>
   </main>

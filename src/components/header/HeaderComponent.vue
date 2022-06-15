@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <div class="header__container">
-        <p class="logo">LOGO</p>
+        <router-link class="logo__link" to="/">LOGO</router-link>
 
         <nav-component />
       </div>
@@ -36,8 +36,9 @@ export default {
       height: 60px;
     }
 
-    .logo {
+    .logo__link {
       font-weight: 700;
+      color: #fff;
     }
   }
 }
