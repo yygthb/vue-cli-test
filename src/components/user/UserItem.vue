@@ -1,7 +1,8 @@
 <template>
   <li class="user__item">
     <p class="row row__name">
-      <span class="user__name">{{ user.name }}</span
+      <span class="user__id">_{{ user.id }}</span
+      >&nbsp; <span class="user__name">{{ user.name }}</span
       >&nbsp;
       <span class="user__username">({{ user.username }})</span>
     </p>
@@ -27,7 +28,7 @@ export default {
   max-width: 75%;
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid red;
+  border: 1px solid lighten($color-second, 30%);
   border-radius: 5px;
 
   @include media(t) {
@@ -40,7 +41,7 @@ export default {
 
   .user__name {
     font-weight: 700;
-    color: red;
+    color: $color-second;
   }
 
   .user__username {
