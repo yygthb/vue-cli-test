@@ -33,5 +33,10 @@ export default {
       color: #fff;
     }
   }
+
+  .router-link-exact-active {
+    opacity: 1;
+    text-decoration: underline;
+  }
 }
 </style>
